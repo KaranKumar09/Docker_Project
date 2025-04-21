@@ -1,29 +1,5 @@
-# Ignore node_modules - dependencies will be reinstalled inside the container
 node_modules
-
-# Logs
-*.log
-logs
-
-# Environment files
 .env
-.env.local
-.env.*.local
-
-# OS / editor specific files
-.DS_Store
-Thumbs.db
-*.swp
-
-# Git files
+*.log
 .git
-.gitignore
-
-# Build artifacts (if any)
-dist
-build
-
-# npm debug logs
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+.DS_Store
