@@ -5,7 +5,8 @@ services:
     ports:
       - "5000:5000"
     environment:
-      - NODE_ENV=production
+      - NODE_ENV=development
     volumes:
       - .:/app
-    command: node index.js
+      - /app/node_modules  # Prevents overwrite of node_modules in container
+    command: npm run dev
