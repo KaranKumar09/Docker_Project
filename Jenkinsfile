@@ -49,7 +49,14 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/KaranKumar09/Docker_Project.git'
+                git branch: 'main', url: 'https://github.com/KaranKumar09/Docker_Project.git'
+            }
+        }
+
+        // Optional: only if not handled inside Dockerfile
+        stage('Install Dependencies') {
+            steps {
+                sh 'npm install'
             }
         }
 
