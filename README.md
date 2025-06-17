@@ -31,6 +31,5 @@ This is a robust and scalable **Full Stack Web Application** built using modern 
 
 ---
 
-## 📁 Project Structure
 
 
